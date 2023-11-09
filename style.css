@@ -33,6 +33,7 @@ img {
 .section-title span {
 	color: crimson;
 }
+/* cta = Button style short for click to appear */
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
@@ -49,6 +50,7 @@ img {
 	color: white;
 	background-color: crimson;
 }
+/* Brand = Logo */
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
@@ -58,7 +60,7 @@ img {
 	color: crimson;
 }
 
-/* Header section */
+/* Header/menu section */
 #header {
 	position: fixed;
 	z-index: 1000;
@@ -128,10 +130,9 @@ img {
 }
 #header .nav-list ul li:hover a {
 	color: crimson;
-}
-/* End Header section */
+}/* End Header section */
 
-/* Index page/Section */
+/* Index page */
 #welcome {
 	background-image: url(./img/welcome.jpg);
 	background-size: cover;
@@ -154,6 +155,7 @@ img {
 	padding: 0 50px;
 	justify-content: flex-start;
 }
+/* Appear the text and its red color*/
 #welcome h1 {
 	display: block;
 	width: fit-content;
@@ -191,8 +193,7 @@ img {
 }
 #welcome h1:nth-child(3) span {
 	animation-delay: 2.5s;
-}
-/* End Index Page/Section */
+}/* End Index Page */
 
 /* HTML course Section */
 #html .html {
@@ -210,7 +211,7 @@ img {
 	z-index: 1;
 	overflow: hidden;
 }
-#html .html-item::after {
+#html .html-item::after { /*  changes to the image to appear less bright and others */
 	content: '';
 	position: absolute;
 	left: 0;
@@ -220,8 +221,7 @@ img {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	opacity: 0.9;
 	z-index: -1;
-}
-/* End html Section */
+}/* End html Section */
 
 /* css section */
 #css .css-item {
@@ -234,7 +234,7 @@ img {
 	overflow: hidden;
 	border-radius: 10px;
 }
-#css .css-info {
+#css .css-info {  /*  Background of button */
 	padding: 30px;
 	flex-basis: 50%;
 	height: 90%;
@@ -251,7 +251,7 @@ img {
 	overflow: hidden;
 	position: relative;
 }
-#css .css-img:after {
+#css .css-img:after { /*  changes to the image to appear less bright and others */
 	content: '';
 	position: absolute;
 	left: 0;
@@ -260,8 +260,7 @@ img {
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	opacity: 0.7;
-}
-/* End css section */
+}/* End css section */
 
 /* Photoshop Section */
 #photoshop .photoshop {
@@ -269,21 +268,14 @@ img {
 	max-width: 1200px;
 	padding: 100px 20px;
 }
-#photoshop .cta {
-	color: black;
-	margin-bottom: 50px;
-	padding: 10px 20px;
-	font-size: 2rem;
-}
 #photoshop .photoshop-img {
 	height: 100%;
 	width: 100%;
 	position: center;
 	border: 10px solid white;
-}
-/* End photoshop Section */
+}/* End photoshop Section */
 
-/* Keyframes */
+/* Keyframes used for animations */
 @keyframes text_reveal_box {
 	50% {
 		width: 100%;
@@ -304,10 +296,9 @@ img {
 		color: crimson;
 		font-weight: 500;
 	}
-}
-/* End Keyframes */
+}/* End Keyframes used for animations */
 
-/* Media Query For Tablet */
+/* Media Query For Tablet and Desktop  to make the design as it is across users*/
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
@@ -333,9 +324,7 @@ img {
 		height: 100%;
 	}
 	/* End css */
-}/* End Media Query For Tablet */
-
-/* Media Query For Desktop */
+}
 @media only screen and (min-width: 1200px) {
 	/* header */
 	#header .nav-list ul {
@@ -355,4 +344,4 @@ img {
 		display: none;
 	}
 	/* End header */
-}/* End  Media Query For Desktop */
+}/* End  Media Query For Tablet and Desktop */
